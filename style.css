@@ -1,0 +1,314 @@
+/* Минимальный сброс стилей */
+
+html, 
+body,
+* {
+	margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+/* Стиль body */
+
+body {
+    background-color: #FFF;
+    font-family: 'Work Sans', sans-serif; 
+    color: #151C22;
+}
+a {
+    color: #151C22;
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+
+
+/* Cтили header */
+
+header {
+    max-width: 1171px;
+    margin: 15px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+header nav ul {
+    width: 197px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.header_logo {   
+    width: 78px;
+    margin-right: 120px;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 35px;
+    text-decoration: none;
+}
+
+header div {
+    width: 74px;
+    height: 27px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header div form {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+header div form input {
+    height: 20px;
+    width: 0;
+    padding: 0 40px 0 14px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    transition: .4s cubic-bezier(0, 0.8, 0, 1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+header div form input:focus {
+    width: 176px;
+    z-index: 1;
+    border-bottom: 1px solid #BFC3C8;
+}
+header div form button {
+    background-image: url(assets/search.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.basket {
+    width: 22px;
+    height: 21px;
+    background-image: url(assets/basket.svg);
+    background-size: 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+
+/* Cтили блока со слайдером и описанием */
+
+main {
+    max-width: 1366px;
+    margin: 71px auto 126px;
+}
+.product_descr {
+    margin-left: 96px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Стиль блока слайдера с картинками */
+.slider {
+    width: 545px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.arrow {
+    margin-top: 194px; 
+}
+
+.small_pict {
+    margin-top: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+.small_pict img {
+    max-width: 85px;
+    height: 113px;
+}
+
+
+/* Стиль блока описания товара */
+
+.about_product {
+    width: 668px;
+    padding: 63px 0 59px 70px;
+    background-color: #F1F2F4;
+}
+.about_product h1 {
+    font-size: 32px;
+}
+.about_product p {
+    max-width: 375px;
+    margin-top: 27px;
+    font-size: 16px;
+}
+.about_product h3 {
+    font-weight: 500;
+    font-size: 18px;
+}
+.special_color_block {
+    margin-top: 42px;
+}
+.about_product form {
+    margin-top: 21px;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    box-sizing: content-box;
+    background-clip: content-box;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    outline: none;
+    padding: 2px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+input[type="radio"]:checked {
+    border: 1px solid #B0C3C7;
+}
+
+#greyBlue {
+    background-color: #B0C3C7;
+}
+#darkBlue {
+    background-color: #3B6392;
+}
+#grey {
+    background-color: #BFC3C8;
+}
+
+.about_product input{
+    margin-right: 18px;
+}
+.special_size_block {
+    margin-top: 32px;
+}
+.size_types {
+    max-width: 164px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.size_types a {
+    color: #727A82;
+}
+#sizeS {
+    color: #151C22;
+}
+.price {
+    margin-top: 32px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.add_to_cart {
+    margin-top: 45px;
+}
+.add_to_cart a {
+    display: inline-block;
+    width: 200px;
+    padding: 23px 0;
+    background-color: #151C22;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    color: #FFF;
+}
+
+/* Cтили блока, который "может понравится" */
+.interesting_prod_block {
+    max-width: 1170px;
+    margin: 122px auto 0;
+}
+.head_interesting_prod {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head_interesting_prod h2 {
+    font-weight: bold;
+    font-size: 32px;
+}
+.head_interesting_prod a {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    border-bottom: 2px solid #151C22;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.interesting_prod {
+    margin-top: 62px;
+    display: flex;
+    justify-content: space-between;
+}
+.prod_name {
+    margin-top: 17px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.prod_price {
+    margin-top: 6px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+/* Cтили подвала */
+
+footer {
+    text-align: center;
+    padding: 45px 0;
+    background-color: #151C22;
+}
+.footer_logo {
+    font-weight: 800;
+    font-size: 24px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+footer ul {
+    max-width: 476px;
+    display: flex;
+    justify-content: space-between;
+    margin: 27px auto 0;
+    font-weight: 500;
+    font-size: 18px;
+}
+footer ul li a {
+    color: #FFFFFF;
+}
+footer div {
+    max-width: 170px;
+    padding-left: 2px;
+    margin: 32px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+footer div a {
+    width: 21px;
+}
